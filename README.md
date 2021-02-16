@@ -16,7 +16,7 @@ Easily create domain verification tokens and verify them for use with Google ser
 
 5. `npm install`
 
-6. `node index.js`
+6. `npm run start`
 7. Visit `yourdomain.com/auth` and sign in with Google using google account you would like verification keys to be generated with
 8. Determine whether you want to lock down your endpoints. If you would like to require authentication, in the database, set "auth/lock" to true, and set "auth/key" to a random string. When calling the endpoints include the key in the "Authentication" header. If you don't want to require auth, set "auth/lock" to false.
 

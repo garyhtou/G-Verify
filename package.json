@@ -6,7 +6,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "nodemon index.js"
+		"dev": "nodemon index.js",
+		"start": "node index.js"
 	},
 	"author": "Gary Tou <gary@garytou.com> (https://garytou.com)",
 	"license": "MIT",
