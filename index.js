@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const port = process.env.PORT || 3000;
 
 require("dotenv").config();
@@ -8,6 +9,8 @@ require("./utils/googleapis");
 
 const auth = require("./helpers/auth");
 const siteVerification = require("./helpers/siteVerification");
+
+app.use(cors());
 
 app.get("/", async (req, res) => {
 	res.send("G-Verify. Google Site Verification via REST");
